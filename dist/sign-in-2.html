@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Custer - Landing Page Template for SaaS, Startup & Agency
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css" />
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/color-scheme-1.css" />
+</head>
+
+<body>
+  <div class="preloader-wrapper" id="loader">
+    <div class="loading">
+      <div class="bounceball"></div>
+      <div class="text">NOW LOADING</div>
+    </div>
+  </div>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Sign In Content Start -->
+    <div class="signin-section-02">
+      <div class="signin-section-02__bg">
+        <img src="./image/account/signin-2.png" alt="background-image">
+      </div>
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-end">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-10">
+            <div class="signin-form-02 block-title">
+              <h3 class="title signin-form-02__title">Login to you account</h3>
+              <div class="from__button-group--two mb-5">
+                <a class="account-btn text-dark" href="#">Don’t have an account?</a>
+                <a class="createanaccout-btn" href="#"> Create an account</a>
+              </div>
+              <form action="#" class="from">
+                <div class="from__input-group">
+                  <label for="username" class="from__input-group--label text-dark">Enter email
+                    address*</label>
+                  <input class="from__input-group--input" type="text" placeholder="Enter email address" name="username" id="username" autocomplete="off" />
+                </div>
+                <div class="from__input-group">
+                  <label for="passField" class="from__input-group--label text-dark">Password*</label>
+                  <div class="from__pass-box">
+                    <input class="from__input-group--input from__pass-box--input" id="passField" type="password" placeholder="**********" />
+                    <i id="eye" class="from__pass-box--eye far fa-eye-slash"></i>
+                  </div>
+                </div>
+                <div class="from__check d-flex align-items-center">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Remember me</label>
+                  </div>
+                  <a class="forgot-btn text-dark" href="#">Forgot password?</a>
+                </div>
+                <div class="from__button-group">
+                  <div class="from__button-group--one">
+                    <a class="btn btn-secondary btn-secondary-hvr" href="#">Login Now</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign In Content End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Custer - Landing Page Template for SaaS, Startup & Agency
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css" />
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/color-scheme-1.css" />
+</head>
+
+<body>
+  <div class="preloader-wrapper" id="loader">
+    <div class="loading">
+      <div class="bounceball"></div>
+      <div class="text">NOW LOADING</div>
+    </div>
+  </div>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Coming Soon Comin Content Section Start -->
+    <div class="comingsoom-section-01">
+      <div class="comingsoom-section-01__shape-1 floating-Y-animation-02">
+        <img src="./image/comingsoon/shape-1.svg" class="w-100 make-it-inline" alt="shape">
+      </div>
+      <div class="comingsoom-section-01__shape-2 circle-animation">
+        <img src="./image/comingsoon/shape-2.svg" class="w-100 make-it-inline" alt="shape">
+      </div>
+      <div class="comingsoom-section-01__shape-3  floating-Y-animation-reverse-02">
+        <img src="./image/comingsoon/shape-3.svg" class="w-100 make-it-inline" alt="shape">
+      </div>
+      <div class="comingsoom-section-01__shape-4 circle-animation">
+        <img src="./image/comingsoon/shape-4.svg" class="w-100 make-it-inline" alt="shape">
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="comingsoom-section-01__logo text-center">
+            <a href="index.html"><img src="./image/logo/logo-white.png" alt="logo"></a>
+          </div>
+          <div class="comingsoom-section-01__content text-center">
+            <div class="comingsoom-section-01__content--title block-title">
+              <h2 class="title text-white mb-20">Coming Soon</h2>
+              <p class="text-light">Get ready for the biggest marketing <br/> launch of the year</p>
+            </div>
+            <div class="comingsoom-section-01__content--counter" id="countdown">
+            </div>
+            <form class="comingsoom-section-01__content--notify-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your email and get notified">
+                <div class="arrow">
+                  <img src="./image/icons/icon-arrow-rigth.svg" class="make-it-inline" alt="icon-arrow">
+                </div>
+              </div>
+            </form>
+            <ul class="comingsoom-section-01__content--social">
+              <li>
+                <a target="_blank" href="https://www.instagram.com/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Coming Soon Comin Content Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="./plugins/countdown/jquery.countdown.min.js"></script>
+  <script>
+    $('#countdown').countdown({
+      year: 2023, // YYYY Format
+      month: 2, // 1-12
+      day: 28, // 1-31
+      hour: 0, // 24 hour format 0-23
+      minute: 0, // 0-59
+      second: 0, // 0-59
+    });
+  </script>
+</body>
+
+</html>

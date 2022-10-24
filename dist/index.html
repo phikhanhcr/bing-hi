@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Custer - Landing Page Template for SaaS, Startup & Agency
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css" />
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/color-scheme-1.css" />
+</head>
+
+<body>
+  <div class="preloader-wrapper" id="loader">
+    <div class="loading">
+      <div class="bounceball"></div>
+      <div class="text">NOW LOADING</div>
+    </div>
+  </div>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-left bg-transparent site-header--dark site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark.png" alt="" class="logo-white">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo-white.png" alt="" class="logo-black">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Home <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="index.html">Landing 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-2.html">Landing 2</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-3.html">Landing 3</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-4.html">Landing 4</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-5.html">Landing 5</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-6.html">Landing 6</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-7.html">Landing 7</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-8.html">Landing 8</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-9.html">Landing 9</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-10.html">Landing 10</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Careers<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-4">
+                        <li class="sub-menu--item">
+                          <a href="career.html">Careers</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="career-details.html">Carreer Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Pricing<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-5">
+                        <li class="sub-menu--item">
+                          <a href="pricing-1.html">Pricing-01</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="pricing-2.html">Pricing-02</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Account<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-7-1">
+                        <li class="sub-menu--item">
+                          <a href="sign-in-1.html">Sign In One</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="sign-in-2.html">Sign In Two</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="sign-up-1.html">Sign Up One</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="sign-up-2.html">Sign Up Two</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="reset-password.html">Reset Password</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Portfolios<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-7">
+                        <li class="sub-menu--item">
+                          <a href="portfolio-01.html">Portfolio 01</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-04.html">Portfolio 02</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-04.html">Portfolio 03</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-04.html">Portfolio 04</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-details-1.html">Portfolio-details 02</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-details-2.html">Portfolio-details 02</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="portfolio-details-3.html">Portfolio-details 03</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Servics<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                          <a href="service.html">Servic</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="service-details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-8">
+                        <li class="sub-menu--item">
+                          <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="terms-page.html">Terms & Conditions</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="404.html">404 Error</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="coming-soon-1.html">Coming Soon One</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="coming-soon-2.html">Coming Soon Two</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-10">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Contact <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-11">
+                    <li class="sub-menu--item">
+                      <a href="contact-1.html">Contact One</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="contact-2.html">Contact Two</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button site-header__btns  site-header__btns--01">
+              <a class="btn btn-transparent btn-1" href="#">
+                Login
+              </a>
+              <a class="btn btn-secondary btn-secondary-hvr btn-2 rounded" href="#">
+                Sign Up
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Hero Section Start -->
+    <div class="hero-section-01 bg-primary">
+      <div class="shape">
+        <img src="./image/home-1/hero-shap-curve.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-xxl-4  col-xl-5 col-lg-5 offset-lg-1 col-md-6 col-sm-6 col-xs-7 col-10 order-lg-2">
+            <div class="hero-section-01__image-group">
+              <img src="./image/home-1/hero-image-main.png" alt="hero-img" class="w-100">
+              <div class="hero-section-01__half-image" data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000">
+                <img src="./image/home-1/hero-image-half.png" alt="herohalf" class="w-100">
+              </div>
+              <div class="hero-section-01__shape-1" data-aos="fade-left" data-aos-duration="800" data-aos-delay="2000">
+                <img src="./image/home-1/content-shape-02.svg" alt="herohalf" class="make-it-inline">
+              </div>
+              <div class="hero-section-01__shape-2 " data-aos="zoom-in" data-aos-delay="2800">
+                <img src="./image/home-1/content-shape-01.svg" alt="herohalf" class="make-it-inline floating-Y-animation">
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-8 col-11 order-lg-1">
+            <div class="hero-section-01__content hero-content text-center text-lg-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+              <h1 class="heading-light title">Create your next mobile app landing page in minutes.</h1>
+              <p class="text-light">An enim nullam tempor sapien gravida donec enim ipsum porta justo integer at odio velna vitae auctor integer congue magna at pretium purus pretium ligula rutrum luctus risus</p>
+              <form action="/" class="form-subscribe-inline--01 hero-section-01__form" method="POST">
+                <input type="email" placeholder="Enter your email address" class="form-control" />
+                <button type="submit" class="btn hero-btn btn-secondary btn-secondary-hvr">Start 14 Days Trial</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Brand Section Start -->
+    <div class="brand-section-01">
+      <div class="container">
+        <div class="brand-section-01__wrapper">
+          <div class="single-brand">
+            <img src="./image/brand/brand-1/brand-1.png" alt="brand">
+          </div>
+          <div class="single-brand">
+            <img src="./image/brand/brand-1/brand-2.png" alt="brand">
+          </div>
+          <div class="single-brand">
+            <img src="./image/brand/brand-1/brand-3.png" alt="brand">
+          </div>
+          <div class="single-brand">
+            <img src="./image/brand/brand-1/brand-4.png" alt="brand">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand Section End -->
+    <!-- Features Section Start -->
+    <div class="feature-section-01">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-9 col-xs-11 text-center">
+            <div class="section-title">
+              <h2 class="title">A simple, proven way to boost your team performance.</h2>
+              <p class="text-dark">Fully layered dolor sit amet, consectetur Facere, nobis, id <br class='d-none d-lg-block'/> expedita dolores officiis laboriosam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row justify-content-center justify-content-lg-start feature-widgets-row-02">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="widget widget-column widget-feature-01 icon-sizeY-68 text-center text-lg-start">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/feature-icon-01.svg alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Innovative Soluation</h3>
+                    <p class='widget-text'>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="widget widget-column widget-feature-01 icon-sizeY-68 text-center text-lg-start">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/feature-icon-02.svg alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Clear Navigation</h3>
+                    <p class='widget-text'>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-8" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="widget widget-column widget-feature-01 icon-sizeY-68 text-center text-lg-start">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/feature-icon-03.svg alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Over 800 Clients</h3>
+                    <p class='widget-text'>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features Section End -->
+    <!-- Content One Section Start -->
+    <div class="content-section-01 bg-primary">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 col-sm-6 col-xs-5 col-7">
+            <div class="content-section-01__image-group">
+              <div class="content-section-01__image">
+                <img src="./image/home-1/content-image-group-main.png" class="w-100" alt="mobile-imag">
+                <div class="small-shape">
+                  <img src="./image/home-1/content-shape-01.svg" alt="mobile-shape" class="make-it-inline fill-tertiary">
+                </div>
+                <div class="shape-half-circle" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                  <img src="./image/home-1/content-shape-02.svg" alt="mobile-shape" class="make-it-inline fill-tertiary">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 offset-xl-1 col-lg-6 col-md-9 col-xs-11">
+            <div class="block-title content-section-01__text text-center text-lg-start" data-aos="fade-up" data-aos-duration="800">
+              <h2 class="title heading-light">We develop digital <br class="d-none d-lg-block" > strategies products <br class="d-none d-lg-block" > and services.</h2>
+              <p class="text-light">Vero homero perfecto mei ut, sonet aperiam an nec. Ni <br class="d-none d-xl-block" >  nec dict altera legimu. Me vita de lege ndos expet end is<br class="d-none d-xl-block" >  ad.mita aliu mi ando, haeo tibi que com titure viset<br class="d-none d-xl-block" >  cut.Proin tempus elit a laoreet volut pat. </p>
+              <div class="content-section-01__button-group">
+                <a href="https://www.apple.com/app-store/">
+                  <img src="./image/home-1/app-store.png" alt="sponsor">
+                </a>
+                <a href="https://play.google.com/">
+                  <img src="./image/home-1/play-store.png" alt="sponsor">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-shape transform-origin-top-right" data-aos-delay="200" data-aos-duration="1000" data-aos="zoom-in">
+        <img src="./image/home-1/content-shape-03.svg" alt="mobile-shape" class="make-it-inline fill-tertiary w-100 ">
+      </div>
+    </div>
+    <!-- Content One Section End -->
+    <!-- Video Section Start -->
+    <div class="video-section-01">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-xxl-6 col-md-8 col-xl-6 offset-xxl-1 col-11 order-lg-2 mb-mobile-lg">
+            <div class="video-block" data-aos="fade-left" data-aos-duration="800">
+              <img src="./image/home-1/video-image.png" alt="content-image" class="w-100">
+              <div class="video-button-block">
+                <a href="https://www.youtube.com/watch?v=LWZ7iytIA6k" data-fancybox class="video-btn popup-btn video-btn-1 text-secondary  sonar-emitter bg-white">
+                  <i class="fas fa-play"></i>
+                </a>
+                <p class="heading-light video-block--text">Watch a Quick Tutorial</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xxl-5 col-xl-6 col-md-9 col-xs-11 order-lg-1">
+            <div class="video-section-content block-title text-center text-lg-start" data-aos="fade-right" data-aos-duration="800">
+              <h2 class="title">Starting with appmax <br class="d-none d-xl-block"/> is easier than anything!</h2>
+              <p class="text-dark">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu mi ando, haeo tibi que com titure viset cut.Proin tempus elit a laoreet volut pat. </p>
+              <a href="#" class="btn btn-l1 btn-secondary btn-secondary-hvr">Download Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Section End -->
+    <!-- Content Tow Section Start -->
+    <div class="content-section-02">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-10">
+            <div class="content-section-02__image mb-mobile-lg">
+              <img src="./image/home-1/content-2.png" alt="content-img" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-9 col-xs-11">
+            <div class="block-title text-center text-lg-start" data-aos="fade-up" data-aos-duration="800">
+              <h2 class="title">Boost productivity <br class="d-none d-lg-block"/>  with best creativity</h2>
+              <p class="text-dark">Your well-oiled doesn’t have to down due to complex <br class="d-none d-lg-block"/>  processes, or lack of time to enforce consistency.</p>
+            </div>
+            <div class="row justify-content-center content-section-02__widget">
+              <div class="col-xl-12 col-lg-12 col-md-10 col-xs-9 col-10" data-aos="fade-up" data-aos-duration="800">
+                <div class="widget widget-content widget-column-till-md">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/content-icon-3.png alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Free updates forever</h3>
+                    <p class='widget-text'>Your well-oiled machine doesn’t have to <br class='d-none d-lg-block'/> break down due to build processes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-10 col-xs-9 col-10" data-aos="fade-up" data-aos-duration="800">
+                <div class="widget widget-content widget-column-till-md">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/content-icon-2.png alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Responsive web design</h3>
+                    <p class='widget-text'>Your well-oiled machine doesn’t have to <br class='d-none d-lg-block'/> break down due to build processes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-10 col-xs-9 col-10" data-aos="fade-up" data-aos-duration="800">
+                <div class="widget widget-content widget-column-till-md">
+                  <div class="widget-icon">
+                    <img src=./image/home-1/content-icon-1.png alt="icon">
+                  </div>
+                  <div class="widget-text">
+                    <h3 class='widget-title'>Loaded with features</h3>
+                    <p class='widget-text'>Your well-oiled machine doesn’t have to <br class='d-none d-lg-block'/> break down due to build processes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content Tow Section End -->
+    <!-- Testimonial Section Start -->
+    <div class="team-section-01">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-4 col-lg-6 col-md-9 col-xs-11">
+            <div class="section-title section-title--team-01 text-center">
+              <h2 class="title">Our qualified team</h2>
+              <p class="text-dark">
+                Fully layered dolor sit amet, consectetur Facere, nobis, id expedita dolores officiis laboriosam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-9 col-xs-11">
+            <div class="mobile-slider four-row-mobile-slider team-slider--01 row">
+              <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <a href="javascript:void(0)" class="card card-team-01">
+                  <div class="card-image">
+                    <img src="./image/home-1/team-1.png" alt="card">
+                  </div>
+                  <div class="card-texts">
+                    <h3 class="card-title heading-dark">Cameron Williamson</h3>
+                    <p class="text-dark">Co -Founder</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <a href="javascript:void(0)" class="card card-team-01">
+                  <div class="card-image">
+                    <img src="./image/home-1/team-2.png" alt="card">
+                  </div>
+                  <div class="card-texts">
+                    <h3 class="card-title heading-dark">Brooklyn Simmons</h3>
+                    <p class="text-dark">Project Manager</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <a href="javascript:void(0)" class="card card-team-01">
+                  <div class="card-image">
+                    <img src="./image/home-1/team-3.png" alt="card">
+                  </div>
+                  <div class="card-texts">
+                    <h3 class="card-title heading-dark">Robert Fox</h3>
+                    <p class="text-dark">Web Designer</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                <a href="javascript:void(0)" class="card card-team-01">
+                  <div class="card-image">
+                    <img src="./image/home-1/team-4.png" alt="card">
+                  </div>
+                  <div class="card-texts">
+                    <h3 class="card-title heading-dark">Esther Howard</h3>
+                    <p class="text-dark">HR Manager</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Section End -->
+    <!-- Counter Section Start -->
+    <div class="counter-section-01 bg-default">
+      <div class="container">
+        <div class="row justify-content-center widgets-row-02">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="widget widget-column widget-column-center widget-counter-lg">
+              <h3 class='widget-title text-bule'><span class='counter'>28</span>K</h3>
+              <p class='widget-text'>Total Users</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="widget widget-column widget-column-center widget-counter-lg">
+              <h3 class='widget-title text-yellow'><span class='counter'>13</span>K</h3>
+              <p class='widget-text'>Lifetime Downloads</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="widget widget-column widget-column-center widget-counter-lg">
+              <h3 class='widget-title text-green'><span class='counter'>68</span>K</h3>
+              <p class='widget-text'>Social Likes</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <div class="widget widget-column widget-column-center widget-counter-lg">
+              <h3 class='widget-title text-red'><span class='counter'>10</span>K</h3>
+              <p class='widget-text'>5 Star Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+    <!-- Testimonial Section Start -->
+    <div class="testimonial-section-01">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1 text-center text-lg-start">
+            <div class="section-title testimonial-title">
+              <h2 class="title">What clients are saying</h2>
+            </div>
+            <div class="testimonil-slider--01">
+              <div class="slide">
+                <div class="testimonil-content">
+                  <img src="./image/home-1/quotes.svg" alt="icon">
+                  <p class="text-dark text">Leading an organization is incredibly rewarding and equally humbling. Confidence and humility. Every success is
+                    built on lessons from mistakes made is incredibly
+                    rewarding and equally humbling. It requires healthy.
+                  </p>
+                  <div class="client-info">
+                    <h6>- Mila McSabbu</h6>
+                    <span>Freelance Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="testimonil-content">
+                  <img src="./image/home-1/quotes.svg" alt="icon">
+                  <p class="text-dark text">When potential customers are researching you online, they're getting to know you by way of the content
+                    lessonsfrom mistakes made is incredibly rewarding and
+                    on your website. Understandably,</p>
+                  <div class="client-info">
+                    <h6>- Margot Whitney</h6>
+                    <span>Freelance Developer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="testimonil-content">
+                  <img src="./image/home-1/quotes.svg" alt="icon">
+                  <p class="text-dark text">This is best and biggest unified platform
+                    for instant online admission. We can easily
+                    take admission for any course in any institute.</p>
+                  <div class="client-info">
+                    <h6>- Lindsay Kolowich</h6>
+                    <span>Freelance SEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonil-slider--01__control-buttons">
+              <button class="button button--prev"><img src="./image/home-1/arrow-left.svg" class="make-it-inline" /></button>
+              <button class="button button--next"><img src="./image/home-1/arrow-right.svg" class="make-it-inline" /></button>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-lg-5 col-md-9 col-xs-10 order-1 order-lg-2">
+            <div class="testimonil-imageGroup" data-aos="zoom-in" data-aos-duration="800">
+              <img src="./image/home-1/testimonil.png" alt="client-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Section End -->
+    <!-- Cta Section Start -->
+    <div class="cta-section-01 bg-primary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-9 col-xs-11">
+            <div class="block-title text-center">
+              <h2 class="title heading-light">Join of our community of 10,0000 users of the world’s leading
+                organizations</h2>
+            </div>
+            <form action="/" class="form-subscribe-inline--01 cta-section-01__newsletter">
+              <input type="email" placeholder="Enter your email" class="form-control" />
+              <button class="btn btn-secondary btn-secondary-hvr">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+        <div class="cta-section-01--shapes">
+          <div class="cta-shape cta-shape--01 overflow-hidden">
+            <div class="transform-origin-top-right" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./image/home-1/cta-shape-1.svg" alt="shape" class="make-it-inline fill-tertiary">
+            </div>
+          </div>
+          <div class="cta-shape cta-shape--02">
+            <img src="./image/home-1/cta-shape-2.svg" alt="shape" class="make-it-inline fill-tertiary">
+          </div>
+          <div class="cta-shape cta-shape--03" data-aos="fade-right" data-aos-duration="900" data-aos-delay="500">
+            <img src="./image/home-1/cta-shape-3.svg" alt="shape" class="make-it-inline fill-tertiary">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cta Section End -->
+    <!-- Footer Section Start -->
+    <footer class="footer-area--01">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-6 col-xs-9 col-10 order-sm-1 order-lg-1">
+            <div class="footer-content text-center text-sm-start">
+              <a href="index.html" class="footer-content--logo d-block">
+                <img src="./image/logo/logo-dark.png" alt="logo">
+              </a>
+              <p class="footer-content--text text-dark">There are many variations of passages of Lorem the Ipsum available but it is the majority of suffered that a alteration in that some dummy text.</p>
+              <ul class="footer-content--social">
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-4 col-xs-11 offset-sm-1 offset-lg-0 order-sm-2 order-lg-2">
+            <div class="footer-widget footer-widget--01 text-center text-sm-start">
+              <h5 class="footer-widget--title">Services</h5>
+              <ul class="footer-widget--list m-0 p-0 list-unstyled">
+                <li>
+                  <a href="javascript:void(0)">Incident Responder</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Secure Managed IT</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Check website Url</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Locker Security</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-4 col-xs-11 offset-sm-1 offset-lg-0 order-sm-4 order-lg-3">
+            <div class="footer-widget footer-widget--02 text-center text-sm-start">
+              <h5 class="footer-widget--title">About Us</h5>
+              <ul class="footer-widget--list m-0 p-0 list-unstyled">
+                <li>
+                  <a href="javascript:void(0)">Payment Plans</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Make saving More</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Tax Calculator</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Talk To Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-sm-6 col-xs-11 order-sm-3 order-lg-4">
+            <div class="footer-widget footer-widget--03 text-center text-sm-start">
+              <h5 class="footer-widget--title">Our Support Download</h5>
+              <ul class="footer-widget--info m-0 p-0 list-unstyled">
+                <li>455 West Orchard Street </li>
+                <li>Kings Mountain, NC 28086</li>
+                <li>Phone:
+                  <a href="#">+8 (123) 985 789</a>
+                </li>
+                <li>Email:
+                  <a href="#"> metax@gamil.com</a>
+                </li>
+              </ul>
+              <div class="footer-widget--info-brand">
+                <a href="https://www.apple.com/app-store/">
+                  <img src="./image/logo/f-app-store.png" alt="sponsor" class="mw-100">
+                </a>
+                <a href="https://play.google.com/">
+                  <img src="./image/logo/f-play-store.png" alt="sponsor" class="mw-100">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <p>© 2021 Custer All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
